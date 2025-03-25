@@ -1,14 +1,17 @@
 {
-    "name": "amit333/gemini",
-    "type": "library",
-    "description": "My Gemini API integration library",
-    "autoload": {
-        "psr-4": {
-            "Amit333\\Gemini\\": "src/"
-        }
-    },
     "require": {
         "php": "^7.0|^7.1|^7.4|^8.0|^8.1|^8.2|^8.3|^8.4",
         "google/cloud-aiplatform": "^1.28"
+    },
+    "repositories": [
+        {
+            "type": "main",
+            "url": "git@github.com:amit333/gemini.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "googlecloud\\": "src/"
+        }
     }
 }
